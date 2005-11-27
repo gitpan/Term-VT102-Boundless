@@ -1,0 +1,18 @@
+---
+name: Term-VT102-Boundless
+version: 0.01
+author: ~
+abstract: |-
+  A L<Term::VT102> that grows automatically to
+  accomodate whatever you print to it.
+license: perl
+requires:
+  perl: 5.8
+build_requires:
+  Term::VT102: 0
+  Test::More: 0.53
+provides:
+  Term::VT102::Boundless:
+    file: lib/Term/VT102/Boundless.pm
+    version: 0.01
+generated_by: Module::Build version 0.2611

@@ -1,18 +1,13 @@
----
-name: Term-VT102-Boundless
-version: 0.01
-author: ~
-abstract: |-
-  A L<Term::VT102> that grows automatically to
-  accomodate whatever you print to it.
-license: perl
-requires:
-  perl: 5.8
-build_requires:
-  Term::VT102: 0
-  Test::More: 0.53
-provides:
-  Term::VT102::Boundless:
-    file: lib/Term/VT102/Boundless.pm
-    version: 0.01
-generated_by: Module::Build version 0.2611
+--- #YAML:1.0
+name:                Term-VT102-Boundless
+version:             0.02
+abstract:            ~
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.32
+distribution_type:   module
+requires:     
+    Term::VT102:                   0
+    Test::More:                    0.53
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2

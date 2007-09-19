@@ -5,7 +5,8 @@ use warnings;
 
 use Test::More tests => 14;
 
-my $m; BEGIN { use_ok($m = "Term::VT102::Boundless") }
+my $m;
+use ok $m = 'Term::VT102::Boundless';
 
 can_ok($m, "new");
 isa_ok(my $o = $m->new, $m);
@@ -27,5 +28,5 @@ is( $o->rows, 2, "2 rows");
 
 for (1 .. 2) {
 	is( length( $o->row_text(1) ), 5, "row_text($_) length is 5");
-	is( length( $o->row_attr(1) ), 10, "row_attr($_) length is 5");
+	is( length( $o->row_attr(1) ), 10, "row_attr($_) length is 10");
 }

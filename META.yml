@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Term-VT102-Boundless
-version:             0.02
+version:             0.03
 abstract:            ~
 license:             ~
 generated_by:        ExtUtils::MakeMaker version 6.32
@@ -8,6 +8,7 @@ distribution_type:   module
 requires:     
     Term::VT102:                   0
     Test::More:                    0.53
+    Test::use::ok:                 0
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.2.html
     version: 1.2

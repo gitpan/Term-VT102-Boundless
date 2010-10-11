@@ -6,7 +6,7 @@ use base qw/Term::VT102/;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 sub new {
 	my ( $class, @args ) = @_;
@@ -56,7 +56,7 @@ sub _process_text {
 	$self->callback_call('ROWCHANGE', $y, 0);
 }
 
-sub _code_CUD {                         # move cursor down
+sub _move_down {                         # move cursor down
 	my ( $self, $num ) = @_;
 
 	$num = 1 if (not defined $num);
